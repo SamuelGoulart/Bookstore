@@ -1,0 +1,16 @@
+#nav_categories{
+    max-width: 1300px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#menu_categories{
+    display: flex;
+    gap: 2.5rem;
+}
+
+#menu_categories a {
+  color: var(--color-text);
+}

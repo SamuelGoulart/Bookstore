@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title-color: #241400;
+    --color-purple: #6C63FF;
+    --color-text: #241400;
+    --color-text-white: #FFFFFF;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFAF5;
+}
+
+h1{
+    font-weight: 900;
+    color: var(--title-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
