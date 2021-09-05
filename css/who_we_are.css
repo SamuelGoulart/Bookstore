@@ -1,0 +1,27 @@
+#who_we_are {
+    max-width: 750px;
+    width: 90vw;
+    margin: 100px auto;
+}
+
+#who_we_are>h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#who_we_are p {
+    line-height: 30px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#who_we_are p::first-letter {
+    margin-left: 10px;
+}
+
+@media (max-width: 750px) {
+    #who_we_are {
+        margin: 50px auto;
+    }
+}

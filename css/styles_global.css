@@ -9,11 +9,12 @@
     --color-purple: #6C63FF;
     --color-text: #241400;
     --color-text-white: #FFFFFF;
+    --color-background: #FFFAF5;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFFAF5;
+    background-color: var(--color-background);
 }
 
 h1{
@@ -29,3 +30,15 @@ ul {
     list-style: none;
 }
 
+#header,
+#localization,
+#presentation,
+#who_we_are,
+#download,
+#nav_categories{
+    overflow-x: hidden;
+}
+
+.general_formatting{
+   margin: 100px auto;
+}

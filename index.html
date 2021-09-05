@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="./css/styles_global.css">
     <link rel="stylesheet" href="./css/presentation.css">
     <link rel="stylesheet" href="./css/nav_categories.css">
-    <link rel="stylesheet" href="./css/slider_Multiple_Items.css">
+    <link rel="stylesheet" href="./css/slider_multiple_items.css">
+    <link rel="stylesheet" href="./css/who_we_are.css">
+    <link rel="stylesheet" href="./css/localization.css">
+    <link rel="stylesheet" href="./css/download.css">
     <title>Bookstore</title>
 </head>
 
@@ -43,6 +46,7 @@
             <input type="text">
         </div>
     </header>
+
     <div id="presentation">
         <div id="imgPresentation">
             <img src="./img/illustration_of_person_reading_book.svg" alt="Ilustração de pessoa lendo livro">
@@ -58,21 +62,37 @@
         </div>
     </div>
     <nav id="nav_categories">
+
         <div>
             <h1>CATEGORIAS</h1>
         </div>
         <div>
             <ul id="menu_categories">
-                <li><a href="/">Fantasia</a></li>
-                <li><a href="/">Auto desenvolvimento</a> </li>
-                <li><a href="/">Detetives</a></li>
-                <li><a href="/">Bebê</a></li>
-                <li><a href="/">Audio livros</a></li>
-                <li><a href="/">Outros</a></li>
+                <div>
+                    <li><a href="/">Administração</a></li>
+                    <li><a href="/">Autoajuda</a> </li>
+                    <li><a href="/">Direito</a></li>
+                </div>
+                <div>
+                    <li><a href="/">Didáticos</a></li>
+                    <li><a href="/">Mangás</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Outros <img src="./img/icon/triangle.svg" alt="triângulo">
+                        </button>
+                        <div class="dropdown_content">
+                            <a href="#">Literatura Estrangeira</a>
+                            <a href="#">Literatura Infantojuvenil</a>
+                            <a href="#">Literatura Nacional</a>
+                            <a href="#">Medicina</a>
+                        </div>
+                    </div>
+                </div>
+
             </ul>
         </div>
     </nav>
-    <div id="slider_Multiple_Items">
+
+    <div id="slider_multiple_items">
         <div class="carousel_container">
             <div class="carousel_inner">
                 <div class="track">
@@ -249,6 +269,223 @@
             </div>
         </div>
     </div>
+    <div id="slider_multiple_items1">
+        <h1>Mais Populares</h1>
+        <div class="carousel_container carousel_container1">
+            <div class="carousel_inner">
+                <div class="track track1">
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="author">Nigro Thiago</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="nav">
+                <button class="prev prev1">
+                    <img src="./img/icon/left_arrow_icon.svg" alt="ícone de seta para o lado  direito">
+                </button>
+                <button class="next next1">
+                    <img src="./img/icon/right_arrow_icon.svg" alt="ícone de seta para o lado  esquerdo">
+                </button>
+            </div>
+        </div>
+    </div>
+    <section id="who_we_are">
+        <h1>Quem nós somos</h1>
+        <p>
+            A Bookstore é uma livraria que atende pela sua loja física e pelo e commerce, por meio do website
+            www.bookstore.com e de nossa extensa comunidade online, também alcançamos leitores em todo o Brasil, pessoas
+            tão entusiasmadas com os livros quanto nós.
+        </p>
+        <p>
+            Estamos alicerçados nos valores fundamentais da nossa empresa, que nos guiaram nos altos e baixos da
+            indústria de livreiros. O amor de cada funcionário pelos livros nos impulsiona para a frente.
+        </p>
+        <p>
+            Estamos ansiosos para um futuro repleto de muitas novas oportunidades, inovações e, claro, novos livros!
+        </p>
+    </section>
+    <section id="localization">
+        <h1>Nossa Localização</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1047723391343!2d-46.900181785022966!3d-23.52873378469903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0154039cb55b%3A0xadf34a919f156950!2sSENAI%20Jandira%20-%20Professor%20Vicente%20Amato!5e0!3m2!1spt-BR!2sbr!4v1630779715998!5m2!1spt-BR!2sbr"
+            width="750" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <div id="download">
+        <div id="img_dowload">
+            <img src="./img/download_illustration.svg">
+        </div>
+        <div id="download_presentation">
+            <h1>Baixe o aplicativo para desfrutar mais!</h1>
+            <div id="text_dowload">
+                <p>Simples é fácil abaixar o aplixativo, ocupa pouco espaço na memória do seu Smartphone.</p>
+                <p>Pelo Google Chrome no (Android), você pode fazer o download</p>
+                <ol>
+                    <li>Basta abrir o nosso web site no navegador</li>
+                    <li>Tocar no ícone de três pontos </li>
+                    <li>Selecionar "Adicionar à tela inicial</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/header.js"></script>
     <script src="./js/slider_Multiple_Items.js"></script>
 </body>

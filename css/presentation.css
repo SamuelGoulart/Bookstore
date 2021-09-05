@@ -5,10 +5,14 @@
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
 }
 
-#imgPresentation >img{
+#imgPresentation>img {
+    display: block;
+    margin: auto;
     max-width: 600px;
+
     width: 100vw;
 }
 
@@ -30,33 +34,41 @@
     color: var(--color-text);
 }
 
-#presentationText>button{
+#presentationText>p::first-letter {
+    margin-left: 10px;
+}
+
+#presentationText>button {
     width: 215px;
     height: 55px;
     background-color: var(--color-purple);
     border: 0px;
 }
 
-#presentationText>button>a{
+#presentationText>button>a {
     font-weight: 900;
     font-size: 1rem;
     color: var(--color-text-white);
 }
 
 @media (max-width: 1000px) {
-    #presentation{
-        margin-top: 45px;
-        grid-template-areas: "text"
-                             "image";
+    #presentation {
+        grid-template-areas: "text" "image";
     }
-      
-    #presentationText{
+    #presentationText {
         max-width: 90vw;
         grid-area: text;
         margin: 45px 15px 30px 15px;
         text-align: center;
     }
-    #imgPresentation{
+    #imgPresentation {
         grid-area: image;
     }
 }
+
+@media (max-width: 750px) {
+    #presentation {
+        margin-top: 50px;
+    }
+}
+   
