@@ -1,8 +1,8 @@
 #download {
     max-width: 1300px;
     width: 90vw;
-    margin: 100px auto;
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
@@ -47,10 +47,6 @@
 }
 
 @media (max-width: 600px) {
-    #download {
-        margin-top: 50px auto;
-    }
-
     #download h1 {
         font-size: 1.6rem;
     }

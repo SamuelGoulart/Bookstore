@@ -1,5 +1,6 @@
 .carousel_container {
   width: 1280px;
+  max-width: 90vw;
   margin: 50px auto;
   min-height: 200px;
   position: relative;
@@ -12,7 +13,7 @@
 .carousel_container .track {
   display: inline-flex;
   transition: transform 0.5s;
-  column-gap: 40px;
+  column-gap: 30px;
 }
 
 .card_container {
@@ -70,13 +71,19 @@
   font-size: 30px;
 }
 
+.img img {
+  max-width: 124px;
+  max-height: 190px;
+  margin-top: 10px;
+}
+
 .info {
   display: flex;
   flex-direction: column;
   padding: 20px 32px 0px 32px;
 }
 
-.old_price{
+.old_price {
   text-decoration: line-through;
   font-size: 0.75rem;
 }
@@ -120,29 +127,34 @@
   margin-top: 5px;
 }
 
-.footerCard a{
-    color: var(--color-text-white);
+.footerCard a {
+  color: var(--color-text-white);
 }
 
-#slider_multiple_items1 {
-  margin-top: 100px;
-}
-
-#slider_multiple_items1 > h1{
+#slider_multiple_items1>h1 {
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .carousel_container {
-    width: 80%;
-  }
-  .carousel_container .card_container {
-    width: 290px;
-  }
 }
 
 @media (max-width: 1024px) {
   .carousel_container {
     width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel_container {
+    width: 82%;
+  }
+  .carousel_container .card_container {
+    width: 200px;
+  }
+  .carousel_container .track {
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel_container .card_container {
+    width: 220px;
   }
 }

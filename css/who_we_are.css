@@ -1,7 +1,6 @@
 #who_we_are {
     max-width: 750px;
     width: 90vw;
-    margin: 100px auto;
 }
 
 #who_we_are>h1 {
@@ -18,10 +17,4 @@
 
 #who_we_are p::first-letter {
     margin-left: 10px;
-}
-
-@media (max-width: 750px) {
-    #who_we_are {
-        margin: 50px auto;
-    }
 }

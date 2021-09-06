@@ -1,8 +1,6 @@
 #presentation {
     max-width: 1300px;
     width: 90vw;
-    margin: auto;
-    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 
@@ -12,7 +10,6 @@
     display: block;
     margin: auto;
     max-width: 600px;
-
     width: 100vw;
 }
 
@@ -65,10 +62,3 @@
         grid-area: image;
     }
 }
-
-@media (max-width: 750px) {
-    #presentation {
-        margin-top: 50px;
-    }
-}
-   

@@ -1,7 +1,7 @@
 #nav_categories {
   max-width: 1300px;
+  margin: auto;
   width: 90vw;
-  margin: 100px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -29,7 +29,8 @@
 
 .dropbtn {
   color: var(--color-text);
-  font-size: 16px;
+  background-color: var(--color-background);
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -67,9 +68,6 @@
 }
 
 @media (max-width: 750px) {
-  #nav_categories{
-    margin: 50px auto;
-  }
 
   #nav_categories div{
     margin-top: 50px auto;

@@ -16,38 +16,57 @@
     <link rel="stylesheet" href="./css/who_we_are.css">
     <link rel="stylesheet" href="./css/localization.css">
     <link rel="stylesheet" href="./css/download.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Bookstore</title>
 </head>
 
 <body>
     <header id="header">
-        <a id="logo" href="">
+        <a id="logo" href="/">
             <img src="./img/icon/book_icon.svg" alt="Ícone da loja">
         </a>
         <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+
+            <button aria-label="Abrir Menu" id="btn_mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
+
             <ul id="menu" role="menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/">Categorias</a></li>
                 <li><a href="/">Mais populares</a></li>
                 <li><a href="/">Localização</a></li>
             </ul>
-
-            <div id="headerIcons">
-                <img src="./img/icon/user_login.svg" alt="Ícone de login da conta">
-                <img src="./img/icon/heart_icon.svg" alt="Ícone dos favoritos">
-                <img src="./img/icon/shopping_cart_icon.svg" alt="Ícone de carrinho de compra">
-            </div>
         </nav>
-        <div id="searchEntry">
-            <input type="text">
+        <div id="search_entry">
+            <input class="input" type="text" placeholder="Pesquise livros" pattern=".+" required />
+            <button class="submit_lente" type="submit">
+                <img src="./img/icon/magnifying_glass_icon.svg" alt="ícone de lupa" srcset="">
+            </button>
         </div>
+
+        <div id="icones_header">
+
+            <div id="user_login">
+                <img src="./img/icon/user_login.svg" alt="Ícone de login da conta">
+                <span>olá, faça seu login ou cadastra-se</span>
+            </div>
+
+            <div id="heart_icon">
+                <img src="./img/icon/heart_icon.svg" alt="Ícone dos favoritos">
+            </div>
+
+            <div id="shopping_cart">
+                <img src="./img/icon/shopping_cart_icon.svg" alt="Ícone de carrinho de compra">
+                <span>R$ 0,00</span>
+            </div>
+        </div>
+
+
     </header>
 
-    <div id="presentation">
+    <div id="presentation" class="general_formatting">
         <div id="imgPresentation">
             <img src="./img/illustration_of_person_reading_book.svg" alt="Ilustração de pessoa lendo livro">
         </div>
@@ -61,6 +80,7 @@
             </button>
         </div>
     </div>
+
     <nav id="nav_categories">
 
         <div>
@@ -77,7 +97,7 @@
                     <li><a href="/">Didáticos</a></li>
                     <li><a href="/">Mangás</a></li>
                     <div class="dropdown">
-                        <button class="dropbtn">Outros <img src="./img/icon/triangle.svg" alt="triângulo">
+                        <button class="dropbtn"> Outros <img src="./img/icon/triangle.svg" alt="triângulo">
                         </button>
                         <div class="dropdown_content">
                             <a href="#">Literatura Estrangeira</a>
@@ -93,7 +113,7 @@
     </nav>
 
     <div id="slider_multiple_items">
-        <div class="carousel_container">
+        <div class="carousel_container general_formatting">
             <div class="carousel_inner">
                 <div class="track">
                     <div class="card_container">
@@ -119,13 +139,71 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/ansiedade_como_enfrentar_o_mal_do_seculo.jpg" alt="">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="price">R$ 16,90</span>
+                                <span class="booksTitle">Ansiedade: Como Enfrentar O Mal Do Século</span>
+                                <span class="author">Augusto Cruy</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/uma_breve_historia_do_tempo.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 49,90</span>
+                                <span class="price">R$ 38,90</span>
+                                <span class="booksTitle">Uma Breve História do Tempo</span>
+                                <span class="author">Stephen Hawking</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/o_diario_de_anne_frank.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 49,90</span>
+                                <span class="price">R$ 40,90</span>
+                                <span class="booksTitle">O Diário de Anne Frank</span>
+                                <span class="author">Anne Frank</span>
+                            </div>
+                            <div class="footerCard">
+                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/codigo_limpo.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="price">R$ 48,90</span>
+                                <span class="booksTitle">Código limpo - Habilidades práticas do Agile Software</span>
+                                <span class="author">Robert Cecil Martin</span>
                             </div>
                             <div class="footerCard">
                                 <button> <a href="http://">SAIBA MAIS</a></button>
@@ -179,13 +257,13 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/star_wars _phasma.jpg" alt="">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 54,90</span>
+                                <span class="price">R$ 42,90</span>
+                                <span class="booksTitle">Star Wars - Phasma</span>
+                                <span class="author"> Dawson, Delilah S</span>
                             </div>
                             <div class="footerCard">
                                 <button> <a href="http://">SAIBA MAIS</a></button>
@@ -196,67 +274,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
-                            </div>
-                            <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
-                            </div>
-                            <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
-                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
-                                    alt="Icone de adicionar aos favoritos">
-                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
-                                    alt="Icone de Carrinho de compra">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
-                            </div>
-                            <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
-                            </div>
-                            <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
-                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
-                                    alt="Icone de adicionar aos favoritos">
-                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
-                                    alt="Icone de Carrinho de compra">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
-                            </div>
-                            <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
-                            </div>
-                            <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
-                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
-                                    alt="Icone de adicionar aos favoritos">
-                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
-                                    alt="Icone de Carrinho de compra">
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <div class="nav">
@@ -269,6 +286,7 @@
             </div>
         </div>
     </div>
+
     <div id="slider_multiple_items1">
         <h1>Mais Populares</h1>
         <div class="carousel_container carousel_container1">
@@ -337,7 +355,7 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/o_diario_de_anne_frank.jpg" alt="">
                             </div>
                             <div class="info">
                                 <span class="old_price">R$ 34,90</span>
@@ -447,11 +465,13 @@
             </div>
         </div>
     </div>
-    <section id="who_we_are">
+
+    <section id="who_we_are" class="general_formatting">
         <h1>Quem nós somos</h1>
         <p>
             A Bookstore é uma livraria que atende pela sua loja física e pelo e commerce, por meio do website
-            www.bookstore.com e de nossa extensa comunidade online, também alcançamos leitores em todo o Brasil, pessoas
+            www.bookstore.com e de nossa extensa comunidade online, também alcançamos leitores em todo o Brasil,
+            pessoas
             tão entusiasmadas com os livros quanto nós.
         </p>
         <p>
@@ -462,12 +482,14 @@
             Estamos ansiosos para um futuro repleto de muitas novas oportunidades, inovações e, claro, novos livros!
         </p>
     </section>
-    <section id="localization">
+
+    <section id="localization" class="general_formatting">
         <h1>Nossa Localização</h1>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1047723391343!2d-46.900181785022966!3d-23.52873378469903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0154039cb55b%3A0xadf34a919f156950!2sSENAI%20Jandira%20-%20Professor%20Vicente%20Amato!5e0!3m2!1spt-BR!2sbr!4v1630779715998!5m2!1spt-BR!2sbr"
             width="750" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
+
     <div id="download">
         <div id="img_dowload">
             <img src="./img/download_illustration.svg">
@@ -485,6 +507,81 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div>
+            <hr>
+        </div>
+        <div id="text_footer">
+            <div id="div_msg">
+                <div id="img_footer">
+                    <img src="./img/icon/book_white_icon.svg">
+                    <p>Bookstore</p>
+                </div>
+                <p>Os Livros nos dão asas para voar a lugares altos, supreendentes e inesquecíveis</p>
+            </div>
+            <div class="links_footer">
+                <h1> Links Rápidos</h1>
+                <ul>
+                    <li>
+                        <a href="http://">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Serviços</a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Projetos</a>
+                    </li>
+                    <li>
+                        <a href="http://">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita"> Nosso
+                            time</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links_footer">
+                <h1>Links Rápidos</h1>
+                <ul>
+                    <li><a href="http://">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita"> Contate
+                            - Nos</a></li>
+                    <li><a href="http://">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Blog</a>
+                    </li>
+                    <li><a href="http://"><img src="./img/icon/angle-double-right.svg"
+                                alt="Ícone de dupla seta para direita"> Nossa localização</a></li>
+                    <li><a href="http://"><img src="./img/icon/angle-double-right.svg"
+                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
+                </ul>
+            </div>
+            <div class="links_footer">
+                <h1>Redes Sociais</h1>
+                <ul>
+                    <li><a href="http://">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Entrega</a></li>
+                    <li><a href="http://"> <img src="./img/icon/angle-double-right.svg"
+                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
+                    <li><a href="http://"> <img src="./img/icon/angle-double-right.svg"
+                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
+                    <li><a href="http://"> <img src="./img/icon/angle-double-right.svg"
+                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <div>
+                <p>©copyright</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/header.js"></script>
     <script src="./js/slider_Multiple_Items.js"></script>
