@@ -5,22 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Samuel Goulart">
+    <meta name="description" content="Bookstore, livros de A a Z">
+    <meta name="keywords" content="livros, editora, escritor">
+    <link rel="shortcut icon" href="./img/icon/book_icon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/login_registration/header.css">
     <link rel="stylesheet" href="./css/login_registration/input_materialize.css">
-    <link rel="stylesheet" href="./css/login_registration/login_registration.css">
+    <link rel="stylesheet" href="./css/login_registration/login_and_register.css">
     <link rel="stylesheet" href="./css/styles_global.css">
-    <title>Document</title>
+    <title>Login / Registro</title>
 </head>
 
 <body>
     <header>
         <a href="./index.html">
             <img src="./img/icon/book_icon.svg" alt="Logo">
+            <span>Bookstore</span>
         </a>
     </header>
+
+    <!-- V libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+
+    <!-- 
+        Os input igual do materialize eu peguei no codepen
+        https://codepen.io/lucasyem/pen/ZEEYKdj 
+
+        Observação: Não fui utilizado framework, para deixar os inputs 
+        com essa estilização igual do materialize
+    -->
     <section id="input_materialize">
         <form id="form_login" class="animate" data-anime="left">
             <div id="login_client">
@@ -46,7 +68,7 @@
                 <span id="title_create_register"> Criar seu cadastro</span>
             </div>
             <div id="text_register">
-                <span id="text_register">Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência
+                <span>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência
                     personalizada :)</span>
             </div>
             <div class="form_group field">
@@ -61,15 +83,15 @@
                 <div>
                     <div>
                         <input type="radio" name="genre" required>
-                        <label for="genre">Masculino</label>
+                        <label>Masculino</label>
                     </div>
                     <div>
                         <input type="radio" name="genre" required>
-                        <label for="genre">Feminino</label>
+                        <label>Feminino</label>
                     </div>
                     <div>
                         <input type="radio" name="genre" required>
-                        <label for="genre">Não informar</label>
+                        <label>Não informar</label>
                     </div>
                 </div>
             </div>
@@ -94,14 +116,14 @@
                     placeholder="Telefone" />
                 <label for="phone" class="form_label">Telefone</label>
                 <div class="div_checkbox">
-                    <input type="checkbox" id="receive_whatsApp"  name="receive_whatsApp">
+                    <input type="checkbox" id="receive_whatsApp" name="receive_whatsApp">
                     <label for="receive_whatsApp">Receber notificações por WhatsApp</label>
                 </div>
 
             </div>
             <div class="form_group field">
-                <input type="text" class="form_field" name="e_mail_register" id="e_mail_register" required autocomplete="off"
-                    placeholder="e_mail" />
+                <input type="text" class="form_field" name="e_mail_register" id="e_mail_register" required
+                    autocomplete="off" placeholder="e_mail" />
                 <label for="e_mail_register" class="form_label">E-mail</label>
                 <div class="div_checkbox">
                     <input type="checkbox" id="receive_emails" name="receive_emails">
@@ -126,14 +148,20 @@
             <p>Esqueceu a senha?</p>
 
             <p id="no_register">
-                Não tem cadastro? cadastre-se</a>
+                Não tem cadastro? <a>cadastre-se</a>
             </p>
         </div>
 
-        <p id="registered" class="display_none">já tem cadastro? entrar</p>
+        <p id="registered" class="display_none">já tem cadastro? <a>entrar</p>
     </section>
 
     <script src="./js/login_registration.js"></script>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 
 </body>
 

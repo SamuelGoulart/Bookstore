@@ -19,6 +19,11 @@ const toggleMenu = (event) => {
 
 }
 
+window.addEventListener('scroll', function(){
+  const header = document.querySelector('#header');
+  header.classList.toggle('stick', window.scrollY > 0);
+})
+
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);

@@ -9,7 +9,6 @@
 }
 
 #text_register{
-    grid-area: text;
     width: 80%;
     margin: 10px 0px 30px 0px;
 }
@@ -91,6 +90,11 @@
     color: var(--color-text);
     text-align: center;
     cursor: pointer;
+}
+
+#no_register > a,
+#registered > a{
+    text-decoration: underline;
 }
 
 #cpf,

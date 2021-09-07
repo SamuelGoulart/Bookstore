@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Goulart">
+    <meta name="description" content="Bookstore, livros de A a Z">
+    <meta name="keywords" content="livros, editora, escritor">
+    <title>Bookstore</title>
+    <link rel="shortcut icon" href="./img/icon/book_icon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
@@ -17,14 +22,19 @@
     <link rel="stylesheet" href="./css/home_page/download.css">
     <link rel="stylesheet" href="./css/home_page/footer.css">
     <link rel="stylesheet" href="./css/styles_global.css">
-
-    <title>Bookstore</title>
+    <link rel="manifest" href="manifest.json" />
 </head>
 
 <body>
+    <!-- 
+        Menu mobilie
+        https://www.youtube.com/watch?v=DnODupiIAiE
+        O menu mobilie eu adicionei uma estilização nele é acrescentei os ícones, input de pesquisa e deixando ele como um menu ancorado.
+     -->
     <header id="header">
-        <a id="logo" href="/">
+        <a id="logo" href="./index.html">
             <img src="./img/icon/book_icon.svg" alt="Ícone da loja">
+            <span>Bookstore</span>
         </a>
         <nav id="nav">
 
@@ -34,10 +44,10 @@
             </button>
 
             <ul id="menu" role="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Categorias</a></li>
-                <li><a href="/">Mais populares</a></li>
-                <li><a href="/">Localização</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#nav_categories">Categorias</a></li>
+                <li><a href="#slider_multiple_items">Livros</a></li>
+                <li><a href="#localization">Localização</a></li>
             </ul>
         </nav>
         <div id="search_entry">
@@ -68,6 +78,24 @@
 
     </header>
 
+    <!-- V libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <!-- 
+        As imagens de ilustração eu peguei no site:
+        https://undraw.co/
+        
+        Como diz no site e open source, não possui direito de imagem
+
+        "Você pode usar as ilustrações em qualquer projeto, 
+        comercial ou pessoal, sem atribuição ou quaisquer custos. (Katerina Limpitsoun, 2021)"
+
+     -->
     <div id="presentation" class="general_formatting">
         <div id="imgPresentation">
             <img src="./img/illustration_of_person_reading_book.svg" alt="Ilustração de pessoa lendo livro">
@@ -108,6 +136,13 @@
         </ul>
     </nav>
 
+    <!-- 
+        https://www.youtube.com/watch?v=HAn_WEhkcLc
+          O Slider com múltiplos itens, fiz uma adaptação nele para
+        ficar possível colocar as imagens, as informações, é os 
+        botões de ação.
+    -->
+
     <div id="slider_multiple_items">
         <div class="carousel_container general_formatting">
             <div class="carousel_inner">
@@ -115,7 +150,8 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png"
+                                    alt="Capa do livro do Mil ao Milhão">
                             </div>
                             <div class="info">
                                 <span class="old_price">R$ 34,90</span>
@@ -135,7 +171,8 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/ansiedade_como_enfrentar_o_mal_do_seculo.jpg" alt="">
+                                <img src="./img/book_cover/ansiedade_como_enfrentar_o_mal_do_seculo.jpg"
+                                    alt="Capa do livro Ansiedade como enfretar o mal do século">
                             </div>
                             <div class="info">
                                 <span class="price">R$ 16,90</span>
@@ -143,7 +180,7 @@
                                 <span class="author">Augusto Cruy</span>
                             </div>
                             <div class="footerCard">
-                                 <a href="/">SAIBA MAIS</a>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -154,7 +191,8 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/uma_breve_historia_do_tempo.jpg" alt="">
+                                <img src="./img/book_cover/uma_breve_historia_do_tempo.jpg"
+                                    alt="Capa do livro uma breve história do tempo">
                             </div>
                             <div class="info">
                                 <span class="old_price">R$ 49,90</span>
@@ -174,10 +212,10 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/o_diario_de_anne_frank.jpg" alt="">
+                                <img src="./img/book_cover/o_diario_de_anne_frank.jpg"
+                                    alt="Capa do livro o diário de Anne Frank">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 49,90</span>
                                 <span class="price">R$ 40,90</span>
                                 <span class="booksTitle">O Diário de Anne Frank</span>
                                 <span class="author">Anne Frank</span>
@@ -194,9 +232,10 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/codigo_limpo.jpg" alt="">
+                                <img src="./img/book_cover/codigo_limpo.jpg" alt="Capa do livro código limpo">
                             </div>
                             <div class="info">
+                                <span class="old_price">R$ 55,90</span>
                                 <span class="price">R$ 48,90</span>
                                 <span class="booksTitle">Código limpo - Habilidades práticas do Agile Software</span>
                                 <span class="author">Robert Cecil Martin</span>
@@ -213,13 +252,14 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/o_homem_mais_rico_da_babilonia.jpg"
+                                    alt="Capa do livro o homem mais rico da babilônia">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 29,90</span>
+                                <span class="price">R$ 24,90</span>
+                                <span class="booksTitle">O Homem Mais Rico da Babilônia</span>
+                                <span class="author"> George S</span>
                             </div>
                             <div class="footerCard">
                                 <a href="/">SAIBA MAIS</a>
@@ -233,13 +273,13 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/o_poder_do_habito.jpg" alt="Capa do livro o poder do hábito">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 64,90</span>
+                                <span class="price">R$ 55,90</span>
+                                <span class="booksTitle">O Poder do Hábito </span>
+                                <span class="author">Charles Duhigg</span>
                             </div>
                             <div class="footerCard">
                                 <a href="/">SAIBA MAIS</a>
@@ -291,12 +331,53 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/o_morro_dos_ventos_uivantes.jpg"
+                                    alt="Capa do livro o morro dos ventos uivantes">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
+                                <span class="price">R$ 44,90</span>
+                                <span class="booksTitle">O morro dos ventos uivantes</span>
+                                <span class="author">Emily Brontë</span>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/">SAIBA MAIS</a>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/o_milagre_da_manha.jpg"
+                                    alt="Capa do livro O milagre da manhã">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 39,90</span>
+                                <span class="price">R$ 32,90</span>
+                                <span class="booksTitle">O milagre da manhã</span>
+                                <span class="author">Hal Elrod</span>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/">SAIBA MAIS</a>
+                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./img/book_cover/mais_esperto_que_o_diabo.jpg"
+                                    alt="Capa do livro Mais esperto que o Diabo">
+                            </div>
+                            <div class="info">
+                                <span class="price">R$ 19,90</span>
+                                <span class="booksTitle">Mais esperto que o Diabo</span>
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
@@ -311,13 +392,14 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/a_revolucao_dos_bichos.jpg"
+                                    alt="Capa do livro A revolução dos bichos">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 29,90</span>
+                                <span class="price">R$ 25,90</span>
+                                <span class="booksTitle">A revolução dos bichos</span>
+                                <span class="author">George Orwell</span>
                             </div>
                             <div class="footerCard">
                                 <a href="/">SAIBA MAIS</a>
@@ -331,13 +413,14 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/a_coragem_de_ser_imperfeito.jpg"
+                                    alt="Capa do livro A coragem de ser imperfeito">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 39,90</span>
+                                <span class="price">R$ 31,90</span>
+                                <span class="booksTitle">A coragem de ser imperfeito</span>
+                                <span class="author">Brené Brown</span>
                             </div>
                             <div class="footerCard">
                                 <a href="/">SAIBA MAIS</a>
@@ -351,13 +434,14 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/o_diario_de_anne_frank.jpg" alt="">
+                                <img src="./img/book_cover/mindset_a_nova_psicologia_do_sucesso.jpg"
+                                    alt="Capa do livro Mindset: A nova psicologia do sucesso,">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 49,90</span>
+                                <span class="price">R$ 43,90</span>
+                                <span class="booksTitle">Mindset: A nova psicologia do sucesso</span>
+                                <span class="author">Carol S. Dweck</span>
                             </div>
                             <div class="footerCard">
                                 <a href="/">SAIBA MAIS</a>
@@ -371,13 +455,13 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/o_conto_da_aia.jpg" alt="Capa do livro O conto da aia">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 69,90</span>
+                                <span class="price">R$ 59,90</span>
+                                <span class="booksTitle">O conto da aia</span>
+                                <span class="author">Margaret Atwood</span>
                             </div>
                             <div class="footerCard">
                                 <a href="/">SAIBA MAIS</a>
@@ -391,53 +475,14 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
+                                <img src="./img/book_cover/essencialismo_a_disciplinada_busca.jpg"
+                                    alt="Capa do livro Essencialismo: A disciplinada busca">
                             </div>
                             <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
-                            </div>
-                            <div class="footerCard">
-                                <a href="/">SAIBA MAIS</a>
-                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
-                                    alt="Icone de adicionar aos favoritos">
-                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
-                                    alt="Icone de Carrinho de compra">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
-                            </div>
-                            <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
-                            </div>
-                            <div class="footerCard">
-                                <a href="/">SAIBA MAIS</a>
-                                <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
-                                    alt="Icone de adicionar aos favoritos">
-                                <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
-                                    alt="Icone de Carrinho de compra">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="img">
-                                <img src="./img/book_cover/livro_do_Mil_Ao_Milhão.png" alt="">
-                            </div>
-                            <div class="info">
-                                <span class="old_price">R$ 34,90</span>
-                                <span class="price">R$ 29,90</span>
-                                <span class="booksTitle">Do Mil ao Milhão</span>
-                                <span class="author">Nigro Thiago</span>
+                                <span class="old_price">R$ 49,90</span>
+                                <span class="price">R$ 37,90</span>
+                                <span class="booksTitle">Essencialismo: A disciplinada busca</span>
+                                <span class="author">Greg Mckeown</span>
                             </div>
                             <div class="footerCard">
                                 <a href="/">SAIBA MAIS</a>
@@ -481,9 +526,7 @@
 
     <section id="localization" class="general_formatting">
         <h1>Nossa Localização</h1>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1047723391343!2d-46.900181785022966!3d-23.52873378469903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0154039cb55b%3A0xadf34a919f156950!2sSENAI%20Jandira%20-%20Professor%20Vicente%20Amato!5e0!3m2!1spt-BR!2sbr!4v1630779715998!5m2!1spt-BR!2sbr"
-            width="750" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1049090669526!2d-46.900181785384696!3d-23.528728866272377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0154039cb55b%3A0xadf34a919f156950!2sSENAI%20Jandira%20-%20Professor%20Vicente%20Amato!5e0!3m2!1spt-BR!2sbr!4v1631053364159!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <div id="download">
@@ -499,7 +542,7 @@
                 <ol>
                     <li>Basta abrir o nosso web site no navegador</li>
                     <li>Tocar no ícone de três pontos </li>
-                    <li>Selecionar "Adicionar à tela inicial</li>
+                    <li>Selecionar "Instalar aplicativo"</li>
                 </ol>
             </div>
         </div>
@@ -558,20 +601,12 @@
                             Entrega</a></li>
                 </ul>
             </div>
-            <div class="links_footer">
-                <h1>Redes Sociais</h1>
-                <ul>
-                    <li><a href="/">
-                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
-                            Entrega</a></li>
-                    <li><a href="/"> <img src="./img/icon/angle-double-right.svg"
-                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
-                    <li><a href="/"> <img src="./img/icon/angle-double-right.svg"
-                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
-                    <li><a href="/"> <img src="./img/icon/angle-double-right.svg"
-                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
-                </ul>
-            </div>
+        </div>
+        <div id="social_networks">
+            <img src="./img/icon/icon_youtube.svg" alt="Ícone do youtube">
+            <img src="./img/icon/icon_instagram.svg" alt="Ícone do instragram">
+            <img src="./img/icon/icon_facebook.svg" alt="Ícone do facebook">
+            <img src="./img/icon/icon_twitter.svg" alt="Ícone do twitter">
         </div>
         <div id="copyright">
             <div>
@@ -581,7 +616,13 @@
     </footer>
 
     <script src="./js/header.js"></script>
-    <script src="./js/slider_Multiple_Items.js"></script>
+    <script src="./js/slider_multiple_items.js"></script>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 
 </html>

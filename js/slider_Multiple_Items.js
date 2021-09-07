@@ -29,7 +29,7 @@ next.addEventListener('click', () => {
   prev.classList.add('show')
 
   if (screenWidth > 1300) {
-    track.style.transform = `translateX(-${index * carouselWidth - 180}px)`
+    track.style.transform = `translateX(-${index * carouselWidth - 190}px)`
 
   } else if (screenWidth > 750) {
     track.style.transform = `translateX(-${index * carouselWidth - 110}px)`

@@ -22,18 +22,17 @@
 }
 
 .carousel_container .card_container {
-  width: 259px;
+  width: 255px;
   flex-shrink: 0;
   height: 370px;
   background-color: white;
-  box-sizing: border-box;
 }
 
 .carousel_container .card_container .card {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 .nav button {
@@ -81,6 +80,8 @@
   display: flex;
   flex-direction: column;
   padding: 20px 32px 0px 32px;
+  height: 200px;
+  
 }
 
 .old_price {
@@ -107,10 +108,9 @@
 }
 
 .footerCard {
-  display: grid;
-  grid-template-columns: 100px 38px 38px;
+  display: flex;
+  justify-content: center;
   column-gap: 10px;
-  margin: 15px auto;
   cursor: pointer;
 }
 

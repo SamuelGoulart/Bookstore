@@ -59,6 +59,10 @@
         margin: 45px 15px 30px 15px;
         text-align: center;
     }
+
+    #presentationText > a {
+        margin: auto;
+    }
     #imgPresentation {
         grid-area: image;
     }

@@ -1,0 +1,48 @@
+{
+    "short_name": "Bookstore",
+    "name": "Bookstore",
+    "icons": [
+        {
+            "src": "./img/icon/logo_bookstore_16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "./img/icon/logo_bookstore_24.png",
+            "type": "image/png",
+            "sizes": "24x24"
+        },
+        {
+            "src": "./img/icon/logo_bookstore_32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "./img/icon/logo_bookstore_64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "./img/icon/logo_bookstore_128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "./img/icon/logo_bookstore_256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "./img/icon/logo_bookstore_512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "./index.html",
+    "background_color": "#FFFAF5",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#6C63FF",
+    "orientation": "any",
+    "description": "Livrária de A a Z, em nossa loja você encontra livros para todos os gostos. Uma grande variedade. Preços agradáveis. Histórias interessantes."
+}

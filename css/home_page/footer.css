@@ -31,7 +31,7 @@ footer hr{
     width: 80vw;
     margin: 15px auto 0px auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr ;
     column-gap: 30px;
 }
 
@@ -70,6 +70,19 @@ footer hr{
     padding: 3px 0;
     font-size: 1.1rem;
 
+}
+
+#social_networks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    height: 80px;
+}
+
+#social_networks > img:hover{
+    zoom: 1.2;
+    transition: all 3s;
 }
 
 #copyright{
