@@ -114,21 +114,25 @@
   cursor: pointer;
 }
 
-.footerCard>button {
+.footerCard> a  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 30px;
   background-color: #6C63FF;
   text-transform: uppercase;
-  border: 0px;
-  color: white;
   font-weight: 900;
   border-radius: 3px;
   font-size: 0.75rem;
   margin-top: 5px;
+  color: var(--color-text-white);
 }
 
-.footerCard a {
-  color: var(--color-text-white);
+.footerCard > a:hover{
+  background-color: white;
+  border: 1px solid #6C63FF;
+  color: var(--color-text);
 }
 
 #slider_multiple_items1>h1 {

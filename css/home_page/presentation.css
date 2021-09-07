@@ -35,18 +35,19 @@
     margin-left: 10px;
 }
 
-#presentationText>button {
+#presentationText > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 215px;
     height: 55px;
     background-color: var(--color-purple);
-    border: 0px;
-}
-
-#presentationText>button>a {
     font-weight: 900;
     font-size: 1rem;
     color: var(--color-text-white);
+    border-radius: 5px;
 }
+
 
 @media (max-width: 1000px) {
     #presentation {

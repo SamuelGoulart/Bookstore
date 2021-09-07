@@ -8,15 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home_page/header.css">
+    <link rel="stylesheet" href="./css/home_page/presentation.css">
+    <link rel="stylesheet" href="./css/home_page/nav_categories.css">
+    <link rel="stylesheet" href="./css/home_page/slider_multiple_items.css">
+    <link rel="stylesheet" href="./css/home_page/who_we_are.css">
+    <link rel="stylesheet" href="./css/home_page/localization.css">
+    <link rel="stylesheet" href="./css/home_page/download.css">
+    <link rel="stylesheet" href="./css/home_page/footer.css">
     <link rel="stylesheet" href="./css/styles_global.css">
-    <link rel="stylesheet" href="./css/presentation.css">
-    <link rel="stylesheet" href="./css/nav_categories.css">
-    <link rel="stylesheet" href="./css/slider_multiple_items.css">
-    <link rel="stylesheet" href="./css/who_we_are.css">
-    <link rel="stylesheet" href="./css/localization.css">
-    <link rel="stylesheet" href="./css/download.css">
-    <link rel="stylesheet" href="./css/footer.css">
+
     <title>Bookstore</title>
 </head>
 
@@ -42,16 +43,18 @@
         <div id="search_entry">
             <input class="input" type="text" placeholder="Pesquise livros" pattern=".+" required />
             <button class="submit_lente" type="submit">
-                <img src="./img/icon/magnifying_glass_icon.svg" alt="ícone de lupa" srcset="">
+                <img src="./img/icon/magnifying_glass_icon.svg" alt="ícone de lupa">
             </button>
         </div>
 
         <div id="icones_header">
 
-            <div id="user_login">
-                <img src="./img/icon/user_login.svg" alt="Ícone de login da conta">
-                <span>olá, faça seu login ou cadastra-se</span>
-            </div>
+            <a href="./login_and_register.html">
+                <div id="user_login">
+                    <img src="./img/icon/user_login.svg" alt="Ícone de login da conta">
+                    <span>olá, faça seu login ou cadastra-se</span>
+                </div>
+            </a>
 
             <div id="heart_icon">
                 <img src="./img/icon/heart_icon.svg" alt="Ícone dos favoritos">
@@ -62,7 +65,6 @@
                 <span>R$ 0,00</span>
             </div>
         </div>
-
 
     </header>
 
@@ -75,41 +77,35 @@
             <p>Em nossa loja você encontra livros para todos os gostos. Uma grande variedade. Preços agradáveis.
                 Histórias interessantes.
             </p>
-            <button>
-                <a href="http://">Vá para a categorias</a>
-            </button>
+            <a href="#slider_multiple_items1">Livros mais populares</a>
         </div>
     </div>
 
     <nav id="nav_categories">
-
         <div>
             <h1>CATEGORIAS</h1>
         </div>
-        <div>
-            <ul id="menu_categories">
-                <div>
-                    <li><a href="/">Administração</a></li>
-                    <li><a href="/">Autoajuda</a> </li>
-                    <li><a href="/">Direito</a></li>
-                </div>
-                <div>
-                    <li><a href="/">Didáticos</a></li>
-                    <li><a href="/">Mangás</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn"> Outros <img src="./img/icon/triangle.svg" alt="triângulo">
-                        </button>
-                        <div class="dropdown_content">
-                            <a href="#">Literatura Estrangeira</a>
-                            <a href="#">Literatura Infantojuvenil</a>
-                            <a href="#">Literatura Nacional</a>
-                            <a href="#">Medicina</a>
-                        </div>
+        <ul id="menu_categories">
+            <div>
+                <li><a href="/">Administração</a></li>
+                <li><a href="/">Autoajuda</a> </li>
+                <li><a href="/">Direito</a></li>
+            </div>
+            <div>
+                <li><a href="/">Didáticos</a></li>
+                <li><a href="/">Mangás</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn"> Outros <img src="./img/icon/triangle.svg" alt="triângulo">
+                    </button>
+                    <div class="dropdown_content">
+                        <a href="#">Literatura Estrangeira</a>
+                        <a href="#">Literatura Infantojuvenil</a>
+                        <a href="#">Literatura Nacional</a>
+                        <a href="#">Medicina</a>
                     </div>
                 </div>
-
-            </ul>
-        </div>
+            </div>
+        </ul>
     </nav>
 
     <div id="slider_multiple_items">
@@ -128,7 +124,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -147,7 +143,7 @@
                                 <span class="author">Augusto Cruy</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                 <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -167,7 +163,7 @@
                                 <span class="author">Stephen Hawking</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -187,7 +183,7 @@
                                 <span class="author">Anne Frank</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -206,7 +202,7 @@
                                 <span class="author">Robert Cecil Martin</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -226,7 +222,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -246,7 +242,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -257,7 +253,7 @@
                     <div class="card_container">
                         <div class="card">
                             <div class="img">
-                                <img src="./img/book_cover/star_wars _phasma.jpg" alt="">
+                                <img src="./img/book_cover/star_wars_phasma.jpg" alt="Livro do star wars phasna">
                             </div>
                             <div class="info">
                                 <span class="old_price">R$ 54,90</span>
@@ -266,7 +262,7 @@
                                 <span class="author"> Dawson, Delilah S</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -304,7 +300,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -324,7 +320,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -344,7 +340,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -364,7 +360,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -384,7 +380,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -404,7 +400,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -424,7 +420,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -444,7 +440,7 @@
                                 <span class="author">Nigro Thiago</span>
                             </div>
                             <div class="footerCard">
-                                <button> <a href="http://">SAIBA MAIS</a></button>
+                                <a href="/">SAIBA MAIS</a>
                                 <img class="addToFavoritesIcon" src="./img/icon/heart_icon.svg"
                                     alt="Icone de adicionar aos favoritos">
                                 <img class="shopping_cart_icon" src="./img/icon/shopping_cart_icon.svg"
@@ -492,7 +488,8 @@
 
     <div id="download">
         <div id="img_dowload">
-            <img src="./img/download_illustration.svg">
+            <img src="./img/download_illustration.svg"
+                alt="Imagem de inlustração de uma pessoa fazendo o dowload de um aplicativo no smartphone">
         </div>
         <div id="download_presentation">
             <h1>Baixe o aplicativo para desfrutar mais!</h1>
@@ -515,7 +512,7 @@
         <div id="text_footer">
             <div id="div_msg">
                 <div id="img_footer">
-                    <img src="./img/icon/book_white_icon.svg">
+                    <img src="./img/icon/book_white_icon.svg" alt="logo">
                     <p>Bookstore</p>
                 </div>
                 <p>Os Livros nos dão asas para voar a lugares altos, supreendentes e inesquecíveis</p>
@@ -524,22 +521,22 @@
                 <h1> Links Rápidos</h1>
                 <ul>
                     <li>
-                        <a href="http://">
+                        <a href="/">
                             <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
                             Sobre nós</a>
                     </li>
                     <li>
-                        <a href="http://">
+                        <a href="/">
                             <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
                             Serviços</a>
                     </li>
                     <li>
-                        <a href="http://">
+                        <a href="/">
                             <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
                             Projetos</a>
                     </li>
                     <li>
-                        <a href="http://">
+                        <a href="/">
                             <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita"> Nosso
                             time</a>
                     </li>
@@ -548,30 +545,30 @@
             <div class="links_footer">
                 <h1>Links Rápidos</h1>
                 <ul>
-                    <li><a href="http://">
+                    <li><a href="/">
                             <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita"> Contate
                             - Nos</a></li>
-                    <li><a href="http://">
+                    <li><a href="/">
                             <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
                             Blog</a>
                     </li>
-                    <li><a href="http://"><img src="./img/icon/angle-double-right.svg"
-                                alt="Ícone de dupla seta para direita"> Nossa localização</a></li>
-                    <li><a href="http://"><img src="./img/icon/angle-double-right.svg"
-                                alt="Ícone de dupla seta para direita"> Entrega</a></li>
+                    <li><a href="/"><img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Nossa localização</a></li>
+                    <li><a href="/"><img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Entrega</a></li>
                 </ul>
             </div>
             <div class="links_footer">
                 <h1>Redes Sociais</h1>
                 <ul>
-                    <li><a href="http://">
+                    <li><a href="/">
                             <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
                             Entrega</a></li>
-                    <li><a href="http://"> <img src="./img/icon/angle-double-right.svg"
+                    <li><a href="/"> <img src="./img/icon/angle-double-right.svg"
                                 alt="Ícone de dupla seta para direita"> Entrega</a></li>
-                    <li><a href="http://"> <img src="./img/icon/angle-double-right.svg"
+                    <li><a href="/"> <img src="./img/icon/angle-double-right.svg"
                                 alt="Ícone de dupla seta para direita"> Entrega</a></li>
-                    <li><a href="http://"> <img src="./img/icon/angle-double-right.svg"
+                    <li><a href="/"> <img src="./img/icon/angle-double-right.svg"
                                 alt="Ícone de dupla seta para direita"> Entrega</a></li>
                 </ul>
             </div>
